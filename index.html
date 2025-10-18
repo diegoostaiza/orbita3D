@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <title>Galaxia de Valentina — para ti</title>
+  <title>Galaxia para mi princesita</title>
   <meta name="description" content="Galaxia interactiva de frases de cariño 💘">
   <meta property="og:title" content="Galaxia de Valentina — para ti">
   <meta property="og:description" content="Una galaxia interactiva con palabras de cariño 💖">
@@ -28,15 +28,14 @@
 </head>
 <body>
 <canvas id="galaxy-canvas"></canvas>
-<div class="pill">Arrastra para orbitar • Pinch/rueda para acercarte • Doble toque: corazones</div>
-<div class="attribution">Base: tlanex · Adaptación para Jotab 💫</div>
+<div class="pill">Arrastra para orbitar. Doble toque: corazones</div>
 <div id="err" class="error"></div>
 
 <div class="player">
   <button id="playBtn">▶︎</button>
-  <span style="font-size:12px;opacity:.9">Reproductor — coloca <b>ahi_estabas_tu.mp3</b> junto a este <b>index.html</b> (o usa “Elegir canción”)</span>
+  <span style="font-size:12px;opacity:.9">Reproductor pulse en el icono</span>
   <input type="file" id="pickFile" accept="audio/*">
-  <button id="pickBtn">Elegir canción</button>
+  <button id="pickBtn">Te amo mi pequeña</button>
   <audio id="audio" preload="none">
     <source src="ahi_estabas_tu.mp3" type="audio/mpeg">
   </audio>
@@ -133,7 +132,7 @@ scene.add(bg);
 
 // Galaxy
 const galaxy = new THREE.Group(); scene.add(galaxy);
-const phrases = ["Tacita de sol ☕️✨", "Mi amor ❤️", "Guapa 😍", "Mi cielo 🌌", "Eres mi todo ✨", "Siempre tú ♾️", "Gracias por estar 🙏", "Te quiero mucho 🥰", "Me encantas 💫", "Te aprecio 🤍", "Amo tu voz 🎶", "Anhelo tu sonrisa 😊", "Reinota 👑", "Ricotta 🧀", "Tinto sencillo ☕️", "Vía Láctea 🌠", "Mi vida 💖", "Hola preciosa ✨", "¿Por qué tan linda? 🤭", "Te extraño 🫶", "Te pienso 💭", "Amo tus ojitos 👀", "Contigo 💑", "Quiero que seas tú 💖", "Juntos siempre ♾️"];
+const phrases = ["Mi princesita✨", "Mi amor ❤️", "Guapa 😍", "Mi cielo 🌌", "Eres mi todo ✨", "Siempre tú ♾️", "Gracias por estar 🙏", "Te quiero mucho 🥰", "Me encantas 💫", "Te aprecio 🤍", "Amo tu voz 🎶", "Anhelo tu sonrisa 😊", "Reinota 👑", "Ricotta 🧀", "Cachetitos preciosos", "Mi consentida 🌠", "Mi vida 💖", "Hola preciosa ✨", "¿Por qué tan linda? ", "Te extraño 🫶", "Te pienso 💭", "Amo tus ojitos 👀", "Contigo 💑", "Quiero que seas tú 💖", "Juntos siempre ♾️", "Estaré para cuidarte"];
 const phraseCount = Math.max(phrases.length * 6, 180);
 const arms = 5, radius = 82, maxH = 22;
 
